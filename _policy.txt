@@ -1,0 +1,103 @@
+alias: Net_Access javax.microedition.io.Connector.datagram,
+ javax.microedition.io.Connector.datagramreceiver,
+ javax.microedition.io.Connector.obex.client.tcp,
+ javax.microedition.io.Connector.obex.server.tcp,
+ javax.microedition.io.Connector.http,
+ javax.microedition.io.Connector.https,
+ javax.microedition.io.Connector.serversocket,
+ javax.microedition.io.Connector.socket,
+ javax.microedition.io.Connector.ssl,
+ javax.microedition.io.Connector.rtsp
+
+alias: Device_Connectivity_Comm javax.microedition.io.Connector.comm
+
+alias: Device_Connectivity_Bluetooth javax.microedition.io.Connector.bluetooth.client,
+ javax.microedition.io.Connector.bluetooth.server,
+ javax.microedition.io.Connector.obex.client,
+ javax.microedition.io.Connector.obex.server
+
+alias: Application_Self_Start javax.microedition.io.PushRegistry
+
+alias: Location javax.microedition.location.Location,
+ javax.microedition.location.Orientation,
+ javax.microedition.location.ProximityListener,
+ javax.microedition.location.LandmarkStore.category,
+ javax.microedition.location.LandmarkStore.management,
+ javax.microedition.location.LandmarkStore.read,
+ javax.microedition.location.LandmarkStore.write
+
+alias: Message_Reception javax.microedition.io.Connector.cbs,
+ javax.microedition.io.Connector.sms,
+ javax.wireless.messaging.cbs.receive,
+ javax.wireless.messaging.sms.receive,
+ javax.microedition.io.Connector.mms,
+ javax.wireless.messaging.mms.receive
+
+alias: Message_Delivery javax.wireless.messaging.sms.send,
+ javax.wireless.messaging.mms.send
+
+alias: Multimedia_Access javax.microedition.media.control.RecordControl,
+ javax.microedition.media.control.VideoControl.getSnapshot,
+ javax.microedition.media.Manager,
+ javax.microedition.media.Player,
+ javax.microedition.media.protocol.Datasource
+
+alias: Personal_Data_Read_Access javax.microedition.io.Connector.file.read,
+ javax.microedition.pim.ContactList.read,
+ javax.microedition.pim.EventList.read,
+ javax.microedition.pim.ToDoList.read
+
+alias: Personal_Data_Write_Access javax.microedition.io.Connector.file.write,
+ javax.microedition.pim.ContactList.write,
+ javax.microedition.pim.EventList.write,
+ javax.microedition.pim.ToDoList.write
+
+alias: Satsa javax.microedition.securityservice.CMSMessageSignatureService,
+ javax.microedition.apdu.sat,
+ javax.microedition.apdu.aid,
+ javax.microedition.jcrmi
+
+alias: Sprint_Extensions com.sprintpcs.util.System,
+ com.sprintpcs.util.Location
+
+domain: Gold-Trust
+allow: Application_Self_Start
+allow: Device_Connectivity_Bluetooth
+allow: Device_Connectivity_Comm
+allow: Location
+allow: Message_Delivery
+allow: Message_Reception
+allow: Multimedia_Access
+allow: Net_Access
+allow: Personal_Data_Read_Access
+allow: Personal_Data_Write_Access
+allow: Satsa
+allow: Sprint_Extensions
+
+domain: Silver-Trust
+allow: Application_Self_Start
+allow: Device_Connectivity_Bluetooth
+allow: Device_Connectivity_Comm
+allow: Location
+allow: Message_Delivery
+allow: Message_Reception
+allow: Multimedia_Access
+allow: Net_Access
+allow: Personal_Data_Read_Access
+allow: Personal_Data_Write_Access
+allow: Satsa
+allow: Sprint_Extensions
+
+domain: untrusted
+allow: Application_Self_Start
+allow: Device_Connectivity_Bluetooth
+allow: Device_Connectivity_Comm
+allow: Location
+allow: Message_Delivery
+allow: Message_Reception
+allow: Multimedia_Access
+allow: Net_Access
+allow: Personal_Data_Read_Access
+allow: Personal_Data_Write_Access
+allow: Satsa
+allow: Sprint_Extensions
